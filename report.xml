@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="cxxtest" date="Tue Oct 30 13:48:25 2018" tests="7" errors="0" failures="1" time="0" >
+    <testcase classname="Tests" name="test1" line="10" />
+    <testcase classname="Tests" name="test2" line="20" />
+    <testcase classname="Tests" name="test3" line="30" />
+    <testcase classname="Tests" name="test4" line="40" />
+    <testcase classname="Tests" name="test5" line="50" />
+    <testcase classname="Tests" name="test6" line="59" />
+    <testcase classname="Tests" name="test7" line="69">
+        <failure file="f:\learning\masters\1 course\testing\example2\testsforconverting\tests.h" line="74" type="failedAssert" >Assertion failed: TimeConverter::GetTimePlus5MinStr(tIn, tOut) == 1</failure>
+        <system-out >
+In Tests::test7:
+f:\learning\masters\1 course\testing\example2\testsforconverting\tests.h:74: Error: Assertion failed: TimeConverter::GetTimePlus5MinStr(tIn, tOut) == 1
+</system-out>
+    </testcase>
+</testsuite>

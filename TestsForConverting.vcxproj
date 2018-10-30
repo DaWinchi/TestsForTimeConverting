@@ -87,6 +87,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:\Learning\Masters\1 course\testing\Example2\TestsForConverting\cxxtest-4.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions); WIN32;</PreprocessorDefinitions>
     </ClCompile>
     <PreBuildEvent>
       <Command>

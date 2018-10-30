@@ -4,20 +4,21 @@
 #define CXXTEST_RUNNING
 #endif
 
+#include <fstream>
 #define _CXXTEST_HAVE_STD
 #include <cxxtest/TestListener.h>
 #include <cxxtest/TestTracker.h>
 #include <cxxtest/TestRunner.h>
 #include <cxxtest/RealDescriptions.h>
 #include <cxxtest/TestMain.h>
-#include <cxxtest/ErrorPrinter.h>
+#include <cxxtest/XUnitPrinter.h>
 
 int main( int argc, char *argv[] ) {
  int status;
-    CxxTest::ErrorPrinter tmp;
+    std::ofstream ofstr("report.xml");
+    CxxTest::XUnitPrinter tmp(ofstr);
     CxxTest::RealWorldDescription::_worldName = "cxxtest";
-    status = CxxTest::Main< CxxTest::ErrorPrinter >( tmp, argc, argv );
-	system("pause");
+    status = CxxTest::Main< CxxTest::XUnitPrinter >( tmp, argc, argv );
     return status;
 }
 bool suite_Tests_init = false;
