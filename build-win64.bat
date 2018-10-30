@@ -1,1 +1,1 @@
-cxxtest-4.4\bin\cxxtestgen.py --error-printer -o runner.cpp Tests.h
+cxxtest-4.4\bin\cxxtestgen.py --xunit-printer runner.cpp Tests.h
